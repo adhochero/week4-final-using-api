@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/bde229637b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="row">
+            <nav>
+            <img class="nav__img" src="./assets/logo.svg" alt="logo">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">Find a movie</a>
+                    </li>
+                </ul>
+            </nav>
+            <header>
+                <h1 class="title">
+                    Search for a Movie
+                </h1>
+                <form id="search" onsubmit="searchMovies()">
+                    <input id="search__input" type="text" placeholder="Movie Name">
+                    <button class="search__btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </header>
+        </div>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="container">
+                <div class="movie-list">
+                    <img id="waiting__img" src="./assets/undraw_home_cinema.svg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img class="att__logo" src="./assets/attributionLogo.svg" alt="">
+        <p class="att__para">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+    </footer>
+</body>
+<script src="./app.js"></script>
+</html>
