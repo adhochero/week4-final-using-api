@@ -10,8 +10,7 @@ form.addEventListener('submit', handleForm);
 
 function searchMovies(){
     searchPhrase = document.getElementById('search__input').value;
-    console.log(searchPhrase);
-    if(!searchPhrase) return;
+    if(!searchPhrase.trim()) return;
     loadMovies();
 }
 
