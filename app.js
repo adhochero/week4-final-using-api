@@ -15,8 +15,10 @@ function searchMovies(){
 }
 
 async function loadMovies(){
+    movieListEl.classList += ` movie-list__loading`;
     const movie = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=488aa7dfe7e862a58afe29e2b39c77ad&query=${searchPhrase}`);
     const movieData = await movie.json();
+    movieListEl.classList.remove(`movie-list__loading`);
     movieListEl.innerHTML = movieData.results.map(i => movieHTML(i)).slice(0, 9).join(``); 
 }
 

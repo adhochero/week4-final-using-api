@@ -159,6 +159,35 @@ header{
     display: none !important;
 }
 
+.movie-list__loading #waiting__img{
+    display: none !important;
+}
+
+.movie-list__loading--spinner{
+    display: none !important;
+}
+
+.movie-list__loading .movie-list__loading--spinner{
+    display: block !important;
+}
+
+.fa-spinner{
+    position: absolute;
+    top: 240px;
+    left: 45%;
+    font-size: 80px;
+    animation: rotate 600ms infinite ease;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .movie__block{
     margin: 8px;
     border-radius: 12px;
